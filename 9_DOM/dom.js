@@ -30,6 +30,7 @@ console.log(lists)
 let contact = lists[2]
 console.log(contact)
 
+ 
 
 
 let login = document.getElementsByClassName("btn")
@@ -110,3 +111,21 @@ section.classList.add("con2")
 console.log(section.classList)
 
 // section.classList.remove("con2")
+
+//! how to create element
+let button = document.createElement("button");
+button.innerText="Js Button"
+
+button.style.backgroundColor="green"
+button.style.color="white"
+// section.after(button);
+// section.before(button)
+// section.append(button)
+section.prepend(button)
+
+
+let footer = document.createElement("div")
+footer.innerHTML="<p>Footer from js &copy2025</p>"
+footer.classList.add("footer")
+
+section.after(footer)
