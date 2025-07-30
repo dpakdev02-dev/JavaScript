@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Task</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        .Container {
+            height: 100vh;
+            width: 100vw;
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inner {
+            height: 500px;
+            width: 600px;
+            background-color: white;
+            position: relative;
+            border-radius: 20px;
+        }
+
+        button {
+            height: 50px;
+            width: 70px;
+            border-radius: 10px;
+        }
+        .box1{
+            position: absolute;
+            top: 0;
+        }
+        .box2{
+            position: absolute;
+            right: 0%;
+        }
+        .box3{
+            position: absolute;
+            bottom: 0%;
+        }
+        .box4{
+            position: absolute;
+            right: 0%;
+            bottom: 0%;
+        }
+        .box5{
+            position: absolute;
+            top: 42%;
+            left: 42%;
+            width: 100px;
+        }
+        .dark{
+            background-color: black;
+        }
+        .red{
+            background-color: red;
+        }
+        .yellow{
+            background-color:yellow;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="Container">
+        <div class="inner" id="incont">
+            <button class="box1" onclick="red()">Red</button>
+            <button class="box2" onclick="blue()">Blue</button>
+            <button class="box3" onclick="yellow()">Yellow</button>
+            <button class="box4" onclick="Green()">Green</button>
+            <button class="box5" onclick="ChangeTheme()" >Change Theme</button>
+        </div>
+    </div>
+    <script src="task.js"></script>
+</body>
+
+</html>

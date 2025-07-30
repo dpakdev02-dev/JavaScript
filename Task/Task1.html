@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Bill</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #divv {
+            height: 90vh;
+            width: 600px;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        span {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        input {
+            height: 20px;
+            width: 100px;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+
+        button {
+            height: 30px;
+            width: 70px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        input:focus {
+            height: 40px;
+            transform: translate(2px, -2px);
+        }
+
+        .value{
+            height: 90vh;
+            width: 600px;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 20px;
+        }
+        data {
+            background-color: rgb(99, 189, 192);
+            height: 40px;
+            border: 1px solid;
+            width: 80%;
+            margin: 1px;
+            display: flex;
+            justify-content: space-around;
+            font-size: medium;
+            align-items: center;
+        }
+
+        section {
+            height: 30px;
+            border: 1px solid;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: cadetblue;
+            justify-content: space-around;
+        }
+
+        section>h1 {
+            font-size: medium;
+            font-style: italic;
+
+        }
+        data h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid;
+            height: 100%;
+            width: 33%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="divv">
+        <h1>Bill</h1>
+        <span>
+            <label for="">Item:</label>
+            <input type="text" placeholder="Name">
+            <label for="">Quantity:</label>
+            <input type="text" placeholder="Quantity">
+            <label for="">Price:</label>
+            <!-- &nbsp;//gives space -->
+            <input type="text" placeholder="Price">
+        </span>
+        <button>Add</button>
+        <section>
+            <h1>Product Name</h1>
+            <h1>Quantity</h1>
+            <h1>Total price</h1>
+        </section>
+        <div class="value">
+
+        </div>
+    </div>
+    <script src="Task1.js"></script>
+</body>
+
+</html>

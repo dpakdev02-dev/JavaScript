@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event By Santanu Sir</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        header{
+            height: 150px;
+            width: 100vw;
+            background-color: rgb(205, 233, 115);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgb(77, 241, 241);
+        }
+        .box{
+            height: 160px;
+            width: 300px
+            ;background-color: white;
+            border: 2px solid;
+        }
+        article{
+            height: 120px;
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .output{
+            height: 40px;
+            width: 300px;
+            border: 2px solid;
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Event</h1>
+        <div><button class="btn" onclick="fn1()">
+            Event Handler
+        </button>
+        <button class="btn">
+            Event Listener
+        </button></div>
+    </header>
+    <section>
+        <div class="box" id="box1" onclick="hello()" onclick="hi()">
+            <h3>Card1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, dolore.</p>
+        </div>
+        <div class="box" id="box2">
+            
+        </div>
+        <div class="box" id="box3">
+            <h3>Card3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, dolore.</p>
+        </div>
+   </section>
+
+   <article>
+    <input type="text" placeholder="Enter Something" >
+    <div class="output">
+
+    </div>
+   </article>
+    <script src="./event2.js"></script>
+</body>
+
+</html>
