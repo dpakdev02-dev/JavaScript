@@ -131,7 +131,6 @@ arr5.splice(1,2)
 console.log(arr5)
 
 let arr6 = [10,20,30,40,50,60,70]
-
 arr6.splice(1,2,500)
 console.log(arr6)
 
@@ -185,7 +184,7 @@ console.log(arr8)
 
 
 let mappedArr = numbers.map((ele,index,arr)=>{
-//   console.log(ele,index,arr)
+  console.log(ele,index,arr)
 
   return ele + 100
 })
