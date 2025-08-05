@@ -134,7 +134,6 @@ IndianCricketTeam.map((ele)=>{
 })
 
 
-
 let addNumbers = ()=>{
 
     let a = parseInt( prompt("enter first number"))
