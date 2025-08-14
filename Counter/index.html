@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .container{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 300px;
+            width: 400px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        button{
+            height: 40px;
+            width: 100px;
+            margin: 10px;
+            border: 1px solid grey;
+            border-radius: 10px;
+        }
+        
+        p{
+            font-size: larger;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h1>Click Counter</h1> 
+   <div class="btns">
+    <button id="btn1">Click me</button>
+    <button id="btn3">Decrement</button>
+    <button id="btn2">Reset</button>
+   </div>
+   <div class="output">
+
+   </div>
+   <p>Count:0</p>
+   </div>
+
+   <script>
+        let clk=document.getElementById("btn1");
+        let count=0;
+        clk.addEventListener("click",()=>{
+            let p=document.getElementsByTagName("p")[0];
+            p.innerText=`Count:${++count}`;
+            
+        })
+        let rst=document.getElementById("btn2");
+
+        rst.addEventListener("click",()=>{
+            let p=document.getElementsByTagName("p")[0];
+            p.innerText=`Count:0`;
+            count=0;
+        })
+
+
+        let decr=document.getElementById("btn3");
+        
+        decr.addEventListener("click",()=>{
+            let p=document.getElementsByTagName("p")[0];
+            if (count<=0) {
+                alert("Count is 0,can't able to Decrement")
+            }
+            else{
+                p.innerText=`Count:${--count}`;
+            }
+        })
+
+   </script>
+</body>
+</html>
