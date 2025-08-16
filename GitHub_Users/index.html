@@ -106,11 +106,11 @@
                     <a href="${ele.html_url}">View Profile</a>`
                 users.appendChild(box);
 
-                inp.addEventListener("click", () => {
+                inp.addEventListener("keyup", () => {
                     box.style.display = "none";
-                    console.log(inp.value);
-                    console.log(ele.login);
-                   
+                    if (ele.login.includes(inp.value)) {
+                        box.style.display="flex";
+                    }
                 })
 
 
